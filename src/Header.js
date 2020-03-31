@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const StyledHeader = styled.header`
+  background-color: white;
+`;
+
 const H1 = styled.h1`
   position: relative;
   width: 100%;
@@ -10,14 +14,13 @@ const H1 = styled.h1`
   padding-top: 30px;
   padding-bottom: 5px;
   margin-bottom: 20px;
-  background-color: white;
-  color: black;
+  color: #6002ee;
 `;
 
 const Header = () => (
-  <header>
+  <StyledHeader>
     <H1>Swish Link Generator</H1>
-  </header>
+  </StyledHeader>
 );
 
 export default Header;
