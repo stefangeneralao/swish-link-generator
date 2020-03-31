@@ -20,6 +20,7 @@ export const getSwishLink = (
   if (isPayeeEditable) {
     swishData.payee.editable = true;
   }
+
   if (isAmountEditable) {
     swishData.amount.editable = true;
   }

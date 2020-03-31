@@ -26,7 +26,7 @@ const Main = () => {
   const [ swishLink, setSwishLink ] = useState(null);
 
   useEffect(() => {
-    if (!payee && !amount && !message) {
+    if (!payee || !amount || !message) {
       setSwishLink();
     } else {
       setSwishLink(getSwishLink(payee, false, amount, false, message, false));
@@ -56,7 +56,7 @@ const Main = () => {
       { swishLink && (
         <>
           <P>
-            Använd gärna mobilen med Swish installerat och tryck på länken:
+            Använd din mobil med Swish installerat och tryck på länken nedan:
           </P>
           <SwishLink href={ swishLink }>{ swishLink }</SwishLink>
         </>
