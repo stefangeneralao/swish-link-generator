@@ -10,7 +10,7 @@ export const getSwishLink = (
   const swishData = {
     version: 1,
     payee: {
-      value: String(payee).replace(/^0/, "+46"),
+      value: payee.replace(/\D+/g, ''),
     },
     amount: {
       value: parseInt(amount, 10),

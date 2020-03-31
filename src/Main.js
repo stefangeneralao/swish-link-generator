@@ -36,7 +36,7 @@ const Main = () => {
   return (
     <StyledMain>
       <Input
-        type="number"
+        type="tel"
         value={ payee }
         onChange={ e => { setPayee(e.currentTarget.value) } }
         placeholder="Mottagare"
